@@ -4,8 +4,8 @@
 <center>
 <?php
 include_once 'conn.php';
-$rid=$_POST["id"];
-$sql="DELETE FROM employee where id='$rid'";
+$rid=$_POST['id'];
+$sql="DELETE FROM formtble WHERE id='$rid'";
  if(mysqli_query($conn,$sql))
 {
  echo "record deleted successfully";
